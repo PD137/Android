@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/splash">
+    <!--vertical方向，垂直-->
+   <!--<com.hyphenate.easeui.widget.EaseTitleBar-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="wrap_content"-->
+       <!--app:titleBarTitle="VV">-->
+   <!--</com.hyphenate.easeui.widget.EaseTitleBar>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="WELCOME"
+            android:textSize="30dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户昵称："
+            android:textSize="25sp"/>
+
+        <EditText
+            android:id="@+id/et_login_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密        码："
+            android:textSize="25sp"/>
+
+        <EditText
+            android:id="@+id/et_login_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:password="true"
+            android:singleLine="true" />
+        <!--android:password="true" 密文显示-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bt_login_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_login"
+            android:text="登录"/>
+        <!--android:background="@color/BTC"-->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码"
+            android:textColor="@color/deepskyblue"/>
+
+        <TextView
+            android:id="@+id/bt_login_regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:autoLink="web"
+            android:text="新用户注册"
+            android:textColor="@color/deepskyblue"/>
+
+    </RelativeLayout>
+</LinearLayout>
