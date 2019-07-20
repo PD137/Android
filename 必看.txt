@@ -1,0 +1,4 @@
+打开文件夹下：app\src\main\AndroidManifest.xml
+修改下面value中，自己在环信注册的appkey，就可以了
+
+     android:value="1126190605107858#vtalk" /> <!-- 声明SDK所需的service SDK核心功能 -->
